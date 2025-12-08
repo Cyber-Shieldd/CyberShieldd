@@ -58,7 +58,7 @@ function ClientFeedback() {
                     <p className="">AAI Online Service</p>
                   </div>
                   <Image
-                    src="/people/image.png"
+                    src="/people/default.png"
                     alt="logo"
                     width={200}
                     height={200}
@@ -78,7 +78,7 @@ function ClientFeedback() {
                     {/* <p className="">CEO of Kintsugi</p> */}
                   </div>
                   <Image
-                    src="/people/image.png"
+                    src="/people/default.png"
                     alt="logo"
                     width={200}
                     height={200}
@@ -122,7 +122,7 @@ function ClientFeedback() {
                     <p className="lg:text-base text-sm">BCA Student</p>
                   </div>
                   <Image
-                    src="/people/image.png"
+                    src="/people/default.png"
                     alt="logo"
                     width={200}
                     height={200}
@@ -145,7 +145,7 @@ function ClientFeedback() {
                     <p className="lg:text-base text-sm">E-commerce Store Owner</p>
                   </div>
                   <Image
-                    src="/people/image.png"
+                    src="/people/default.png"
                     alt="logo"
                     width={200}
                     height={200}
@@ -196,7 +196,7 @@ function ClientFeedback() {
                     <p className="">Founder</p>
                   </div>
                   <Image
-                    src="/people/image.png"
+                    src="/people/default.png"
                     alt="logo"
                     width={200}
                     height={200}
