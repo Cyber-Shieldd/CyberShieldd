@@ -15,29 +15,29 @@ export default function Navbar() {
     <header
       className={clsx(
         "flex gap-2 z-50 text-neutral-900 m-0",
-        "sm:backdrop-blur-lg sm:border border-gray-200/80 ",
+        "bg-white sm:backdrop-blur-lg sm:border border-gray-200/80 ",
         "top-2 rounded-lg w-[100%] max-w-7xl  items-center justify-between mx-auto px-4 p-2 sticky"
       )}
     >
       {!isMobile ? (
         <>
           <Image
-            src={"/logos"}
+            src={"/brand/logo.png"}
             alt="logo"
-            width={50}
-            height={50}
+            width={70}
+            height={70}
           />
 
           <nav className="flex gap-7 font-medium">
             <a href="/">Home</a>
-            <a href="#services">Services</a>
-            <a href="#about">About</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="/blog">Blog</a>
+            <a href="/#services">Services</a>
+            <a href="/#about">About</a>
+            <a href="/#testimonials">Testimonials</a>
+            <a href="/careers">Careers</a>
           </nav>
 
           <button className="text-lg h-10 px-4 rounded-lg text-white flex items-center gap-2 bg-neutral-800 relative before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-2 before:bg-gradient-to-t before:from-neutral-800 before:to-neutral-300 before:rounded-t-lg transition-all group">
-            Log In
+           <a href="/#contact">Contact</a> 
           </button>
         </>
       ) : (
@@ -59,7 +59,12 @@ export default function Navbar() {
               <div className="bg-gradient-to-t from-black via-neutral-800 to-neutral-950 border border-neutral-400 text-white p-2 h-full w-full grow flex flex-col rounded-[16px]">
                 <div className="w-full flex justify-between">
                   <div className="flex gap-2 px-4 flex-shrink-0 items-center text-2xl font-semibold">
-                    <span>LOGO</span>
+                    <Image
+                      src={"/brand/logo.png"}
+                      alt="logo"
+                      width={70}
+                      height={70}
+                    />
                   </div>
 
                   <button
@@ -72,11 +77,11 @@ export default function Navbar() {
 
                 <div className="rounded-b-md py-2 px-3">
                   <ul className="space-y-2">
-                    <li className="hover:bg-neutral-800 cursor-pointer p-1.5 px-2 rounded-md">Home</li>
-                    <li className="hover:bg-neutral-800 cursor-pointer p-1.5 px-2 rounded-md">Services</li>
-                    <li className="hover:bg-neutral-800 cursor-pointer p-1.5 px-2 rounded-md">About</li>
-                    <li className="hover:bg-neutral-800 cursor-pointer p-1.5 px-2 rounded-md">Testimonials</li>
-                    <li className="hover:bg-neutral-800 cursor-pointer p-1.5 px-2 rounded-md">Blog</li>
+                    <li className="hover:bg-neutral-800 cursor-pointer p-1.5 px-2 rounded-md"><a href="/">Home</a></li>
+                    <li className="hover:bg-neutral-800 cursor-pointer p-1.5 px-2 rounded-md"><a href="/#services">Services</a></li>
+                    <li className="hover:bg-neutral-800 cursor-pointer p-1.5 px-2 rounded-md"><a href="/#about">About</a></li>
+                    <li className="hover:bg-neutral-800 cursor-pointer p-1.5 px-2 rounded-md"><a href="/#testimonials">Testimonials</a></li>
+                    <li className="hover:bg-neutral-800 cursor-pointer p-1.5 px-2 rounded-md"><a href="/careers">Careers</a></li>
                   </ul>
                 </div>
               </div>
