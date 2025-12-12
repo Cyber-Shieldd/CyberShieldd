@@ -4,6 +4,7 @@ import VerticalCutReveal from "../ui/vertical-cut-reveal";
 import { Card, CardContent, CardHeader } from "../ui/card";
 import Founder from "../../assests/Team-photos/Founder.png"
 import Badak from "../../assests/Team-photos/badak.png"
+import CoFounder from "../../assests/Team-photos/co-founder.png"
 import { PhotoCard } from "./SVGClipPath";
 import ButtonHover1 from "../ui/button-hover1";
 import { ArrowRight } from "lucide-react";
@@ -65,9 +66,9 @@ export default function AboutSection() {
   ]
 
   const member = [
+    "Full Stack Engineer",
     "Expert in building secure, maintainable web applications.",
-    "Part time Joker",
-    "Lent some of his IQ to Einstien"
+    "Knows Development, GenAI, and DevOps. "
   ]
   return (
     <section
@@ -166,7 +167,7 @@ export default function AboutSection() {
         <div className="flex m-4">
             <PhotoCard 
               Title="Co-Founder"
-              imageurl={Badak.src}
+              imageurl={CoFounder.src}
             > 
             <div>
               <ul className="space-y-3 mb-6 m-4">

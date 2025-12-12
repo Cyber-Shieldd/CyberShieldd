@@ -131,7 +131,7 @@ export default function ServicesSection() {
                   ))}
                 </ul>
                 <button className="w-full p-3 rounded-xl bg-indigo-600 shadow-lg shadow-indigo-600 text-white hover:bg-indigo-700">
-                ✨Get Started
+                <a href="/#contact">✨Get Started</a>
                 </button>
               </CardContent>
             </Card>
