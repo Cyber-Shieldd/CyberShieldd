@@ -51,7 +51,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <Link href="/" className="inline-block mb-4">
               <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                CyberShield
+                Abhaya IT Solutions
               </span>
             </Link>
             <p className="text-sm text-gray-400 mb-6 leading-relaxed">
@@ -64,7 +64,7 @@ export default function Footer() {
               <div className="flex items-center gap-3 text-sm">
                 <Mail className="w-4 h-4 text-cyan-400 flex-shrink-0" />
                 <a href="mailto:support@cybershield.com" className="hover:text-cyan-400 transition-colors">
-                  support@cybershieldd.online
+                  support@abhayaitsolutions.online
                 </a>
               </div>
               <div className="flex items-center gap-3 text-sm">
@@ -159,10 +159,10 @@ export default function Footer() {
 
         {/* Newsletter Section */}
         <div className="mt-12 pt-8 border-t border-gray-800">
-          <div className="max-w-md">
+          <div className="max-w-lg">
             <h3 className="text-white font-semibold mb-3">Stay Secure & Informed</h3>
             <p className="text-sm text-gray-400 mb-4">
-              Get monthly security tips and updates delivered to your inbox.
+              Get monthly security tips and updates delivered to your inbox. <span className='text-red-500'>(Coming Soon...)</span>
             </p>
             <form className="flex gap-2">
               <input
@@ -187,7 +187,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             {/* Copyright */}
             <p className="text-sm text-gray-500">
-              © {currentYear} CyberShield Solutions. All rights reserved.
+              © {currentYear} Abhya IT Solutions. All rights reserved.
             </p>
 
             {/* Social Links */}

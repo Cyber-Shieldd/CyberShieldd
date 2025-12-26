@@ -4,10 +4,12 @@ import { TimelineContent } from "../ui/timeline-animations";
 import VerticalCutReveal from "../ui/vertical-cut-reveal";
 import { Sparkles } from "lucide-react";
 import { useRef } from "react";
+import { useRouter } from "next/navigation";
 
 export default function ServicesSection() {
   const heroRef = useRef<HTMLDivElement>(null);
   const pricingRef = useRef<HTMLDivElement>(null);
+  const router = useRouter();
   const revealVariants = {
     visible: (i: number) => ({
       y: 0,
@@ -34,23 +36,24 @@ export default function ServicesSection() {
     "User account management and recovery",
   ];
   
-  const penetrationTestingFeatures = [
-    "Free introductory demo sessions",
-    "Vulnerability scanning (web & system)",
-    "Detailed security assessment reports",
-    "Guidance to fix identified risks",
-    "Custom testing for apps and sites",
-    "Consultation for secure implementation",
+  const webDevelopmentServices = [
+    "Custom website and web app development",
+    "Responsive design for all devices",
+    "Frontend and backend development",
+    "API integration and third-party services",
+    "Performance optimization and scalability",
+    "Maintenance, updates, and bug fixes",
   ];
-  
-  const bugBountyFeatures = [
-    "Beginner-friendly bug bounty guidance",
-    "Tips for safe and responsible disclosure",
-    "Support for setting up organization programs",
-    "Expert triage and assessment help",
-    "Managed bug bounty program administration",
-    "Transparent communication with researchers",
+    
+  const cybersecurityServices = [
+    "Comprehensive security risk assessments",
+    "Vulnerability identification and remediation guidance",
+    "Network and application penetration testing",
+    "Incident response and breach containment support",
+    "Security architecture design and hardening",
+    "Continuous monitoring and threat detection",
   ];
+
   
   const revealVariants3 = {
     visible: (i: number) => ({
@@ -114,7 +117,7 @@ export default function ServicesSection() {
           >
             <Card className="bg-white p-0 h-fit border-neutral-200">
               <CardHeader className="text-left py-4 border-b bg-gray-100 border-neutral-300 rounded-xl">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">IT Support</h3>
+                <h3 className="text-xl font-bold text-gray-900 m-2">IT Support</h3>
                 {/* <div className="flex justify-start items-end">
                   <span className="text-4xl font-semibold text-gray-900">
                     $16
@@ -125,7 +128,7 @@ export default function ServicesSection() {
               <CardContent className="pb-6">
                 <ul className="space-y-3 mb-6">
                   {itSupportFeatures.map((feature, index) => (
-                    <li key={index} className="text-sm text-gray-700">
+                    <li key={index} className="text-sm text-gray-700 m-3">
                       {feature}
                     </li>
                   ))}
@@ -147,7 +150,7 @@ export default function ServicesSection() {
             <Card className="bg-indigo-700 p-0 rounded-lg shadow-lg relative h-fit border-neutral-200">
               <CardHeader className="pb-6 bg-indigo-600 rounded-t-lg py-6">
                 <div className="flex gap-2 justify-between">
-                  <h3 className="text-xl  font-bold text-white mb-4">Bug Bounty Programs</h3>
+                  <h3 className="text-xl font-bold text-white m-2">Web Development Services</h3>
                   <span className="text-white/60 px-2 py-1 text-xs">
                     Popular
                   </span>
@@ -159,8 +162,8 @@ export default function ServicesSection() {
               </CardHeader>
               <CardContent className="pb-6">
                 <ul className="space-y-3 mb-6">
-                  {penetrationTestingFeatures.map((feature, index) => (
-                    <li key={index} className="text-sm text-white">
+                  {webDevelopmentServices.map((feature, index) => (
+                    <li key={index} className="text-sm text-white m-3">
                       {feature}
                     </li>
                   ))}
@@ -181,7 +184,7 @@ export default function ServicesSection() {
           >
             <Card className="bg-white p-0 border-neutral-200">
               <CardHeader className="text-left py-4 border-b bg-gray-100 rounded-xl border-neutral-300">
-                <h3 className="text-xl  font-bold text-gray-900 mb-4">Penetration Testing</h3>
+                <h3 className="text-xl  font-bold text-gray-900 m-2">CyberSecurity Services</h3>
                 {/* <div className="flex justify-start items-end">
                   <span className="text-4xl font-semibold text-gray-900">
                     $40
@@ -191,8 +194,8 @@ export default function ServicesSection() {
               </CardHeader>
               <CardContent className="pb-6">
                 <ul className="space-y-3 mb-6">
-                  {bugBountyFeatures.map((feature, index) => (
-                    <li key={index} className="text-sm text-gray-700">
+                  {cybersecurityServices.map((feature, index) => (
+                    <li key={index} className="text-sm text-gray-700 m-3">
                       {feature}
                     </li>
                   ))}

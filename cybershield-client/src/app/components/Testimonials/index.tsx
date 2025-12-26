@@ -31,7 +31,7 @@ function ClientFeedback() {
             Trusted by Startups and the worlds's largest companies
           </TimelineContent>
           <TimelineContent as="p" className={"mx-auto text-gray-500"} animationNum={1} customVariants={revealVariants} timelineRef={testimonialRef}>
-            Let's hear how CyberShields client's feels about our service
+            Let's hear how Our client's feels about our service
           </TimelineContent>
         </article>
         <div className="lg:grid lg:grid-cols-3  gap-2 flex flex-col w-full lg:py-10 pt-10 pb-4 lg:px-10 px-4">
