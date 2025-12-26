@@ -70,9 +70,10 @@ export default function AboutSection() {
     "Expert in building secure, maintainable web applications.",
     "Knows Development, GenAI, and DevOps. "
   ]
+
   return (
     <section
-      className="relative py-32 px-4 bg-gray-50 overflow-hidden"
+      className="relative py-32 px-4 bg-gray-50"
       ref={heroRef}
     >
 
@@ -126,9 +127,9 @@ export default function AboutSection() {
           animationNum={0}
           customVariants={revealVariants}
           timelineRef={heroRef}
-          className="text-gray-600 text-center sm:text-lg text-sm mb-8 leading-relaxed"
+          className="text-gray-700 text-center sm:text-lg text-sm mb-8 leading-relaxed"
         >
-          CyberShield Solutions is on a mission to make cybersecurity accessible for everyone. 
+          Abhaya IT Solutions is on a mission to make cybersecurity and IT Services accessible for everyone. 
           We empower students and small businesses to defend against digital threats with affordable, 
           expert support.
         </TimelineContent>
@@ -144,44 +145,34 @@ export default function AboutSection() {
         </TimelineContent>
       </div>
 
-      <div className="flex max-w-6xl m-10 mx-auto grid grid-cols-2 gap-4 pt-8 lg:h-[26rem] md:h-[22rem] sm:h-[16rem] h-[14rem]">
-        <div className="flex m-4">
-          <PhotoCard 
-            Title="Founder"
-            imageurl={Founder.src}
-          > 
-            <div className="flex align-start overflow-hidden">
-             <ul className="space-y-3 mb-6 m-4 overflow-hidden">
-                {founder.map((skill, index) => (
-                  <li key={index} className="text-sm text-gray-900">
-                    {skill}
-                  </li>
-                ))}
-              </ul>
-          </div>
+      <div className="max-w-6xl mx-auto m-10 grid grid-cols-1 md:grid-cols-2 gap-4 pt-8">
 
+        <div className="m-4">
+          <PhotoCard Title="Founder" imageurl={Founder.src}>
+            <ul className="list-disc space-y-3 mb-6 m-4 overflow-hidden">
+              {founder.map((skill, index) => (
+                <li key={index} className="text-sm text-gray-900">
+                  {skill}
+                </li>
+              ))}
+            </ul>
           </PhotoCard>
-
         </div>
 
-        <div className="flex m-4">
-            <PhotoCard 
-              Title="Co-Founder"
-              imageurl={CoFounder.src}
-            > 
-            <div>
-              <ul className="space-y-3 mb-6 m-4">
-                  {member.map((skill, index) => (
-                    <li key={index} className="text-sm text-gray-700">
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
-            </div>
-            </PhotoCard>
-            
+        <div className="m-4">
+          <PhotoCard Title="Co-Founder" imageurl={CoFounder.src}>
+            <ul className="space-y-3 mb-6 m-4">
+              {member.map((skill, index) => (
+                <li key={index} className="text-sm text-gray-700">
+                  {skill}
+                </li>
+              ))}
+            </ul>
+          </PhotoCard>
         </div>
+
       </div>
+
     </section>
   );
 }

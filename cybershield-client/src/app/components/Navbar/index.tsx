@@ -22,10 +22,10 @@ export default function Navbar() {
       {!isMobile ? (
         <>
           <Image
-            src={"/brand/logo.png"}
+            src={"/brand/AISlogo.svg"}
             alt="logo"
-            width={70}
-            height={70}
+            width={50}
+            height={50}
           />
 
           <nav className="flex gap-7 font-medium">
@@ -60,10 +60,10 @@ export default function Navbar() {
                 <div className="w-full flex justify-between">
                   <div className="flex gap-2 px-4 flex-shrink-0 items-center text-2xl font-semibold">
                     <Image
-                      src={"/brand/logo.png"}
+                      src={"/brand/AISlogo.svg"}
                       alt="logo"
-                      width={70}
-                      height={70}
+                      width={50}
+                      height={50}
                     />
                   </div>
 

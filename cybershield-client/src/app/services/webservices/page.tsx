@@ -1,8 +1,11 @@
+"use client";
 import React from 'react';
 import { Code, Smartphone, ShoppingCart, Briefcase, Globe, Wrench, Zap, Shield, TrendingUp, Users, Server, Layers } from 'lucide-react';
 import Image from 'next/image';
+import { useRouter } from "next/navigation";
 
 const WebDevelopmentServices: React.FC = () => {
+  const router = useRouter();
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -296,7 +299,9 @@ const WebDevelopmentServices: React.FC = () => {
             Let's discuss how we can bring your vision to life with our comprehensive web development services.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-slate-900 px-10 py-4 rounded-lg font-semibold text-lg hover:bg-slate-100 transition-colors">
+            <button className="bg-white text-slate-900 px-10 py-4 rounded-lg font-semibold text-lg hover:bg-slate-100 transition-colors"
+            onClick={() => router.push("/#contact")}
+            >
               Contact Us
             </button>
             

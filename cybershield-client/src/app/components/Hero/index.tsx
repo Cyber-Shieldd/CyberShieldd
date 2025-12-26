@@ -4,8 +4,10 @@ import { ProgressiveBlur } from "../ui/progressive-blur";
 import { TimelineContent } from "../ui/timeline-animations";
 import { Sparkles } from "lucide-react";
 import { useRef } from "react";
+import { useRouter } from "next/navigation";
 
 function OrganizationHero() {
+  const router = useRouter();
   const heroRef = useRef<HTMLDivElement>(null);
 
   const revealVariants = {
@@ -66,8 +68,8 @@ function OrganizationHero() {
           customVariants={revealVariants}
           className="flex gap-2 items-center mb-4 bg-black text-white w-fit mx-auto py-1 px-1.5 sm:text-sm text-xs rounded-md cursor-pointer"
         >
-          <span className="bg-blue-500 px-1 rounded-sm">NEW</span> Secure your
-          website with CyberShield
+          <span className="bg-blue-500 px-1 rounded-sm">NEW</span> Secure/Build your
+          website with AbhayaITSolutions
         </TimelineContent>
 
         <TimelineContent
@@ -77,11 +79,20 @@ function OrganizationHero() {
           customVariants={scaleVariants}
           className="2xl:text-6xl sm:text-5xl text-4xl font-semibold text-gray-900 mb-6 capitalize"
         >
-          Free Cybersecurity & IT Help for
+          Free Cybersecurity & IT Help & services for
           <br />
           <span className="pt-3 inline-block 2xl:text-8xl sm:text-7xl text-5xl">
+            <TimelineContent
+              as="span"
+              animationNum={4}
+              timelineRef={heroRef}
+              customVariants={scaleVariants}
+              className="text-blue-500 text-shadow capitalize bg-blue-500/20 backdrop-blur-md rounded-xl border-2 border-blue-300 px-2 inline-block m-3"
+            >
+              Students
+            </TimelineContent>
             <span className="bg-gradient-to-b from-black to-black/40 bg-clip-text text-transparent">
-              Students and Small{" "}
+              and Small{" "}
             </span>
             <TimelineContent
               as="span"
@@ -102,7 +113,7 @@ function OrganizationHero() {
           customVariants={revealVariants}
           className="2xl:max-w-3xl max-w-2xl mx-auto 2xl:text-lg sm:text-base text-sm"
         >
-          Rapid fixes, deep expertise. CyberShield serves students, entrepreneurs,
+          Rapid fixes, deep expertise. We serves students, entrepreneurs,
           and organizations with tailored cybersecurity and IT solutions.
         </TimelineContent>
 
@@ -114,7 +125,7 @@ function OrganizationHero() {
           className="flex gap-2 mt-5 mx-auto w-fit"
         >
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="text-white bg-gradient-to-t from-blue-500 to-blue-400 shadow-md shadow-blue-500 border border-blue-500 px-4 py-2 rounded-lg flex items-center gap-2">
+            <button className="text-white bg-gradient-to-t from-blue-500 to-blue-400 shadow-md shadow-blue-500 border border-blue-500 px-4 py-2 rounded-lg flex items-center gap-2" onClick={() =>  router.push("#contact")}>
               <Sparkles size={20} />
               Get started
             </button>
