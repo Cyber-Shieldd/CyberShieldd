@@ -79,7 +79,7 @@ function OrganizationHero() {
           customVariants={scaleVariants}
           className="2xl:text-6xl sm:text-5xl text-4xl font-semibold text-gray-900 mb-6 capitalize"
         >
-          Free Cybersecurity & IT Help & services for
+          Affordable Cybersecurity & IT Help & services for
           <br />
           <span className="pt-3 inline-block 2xl:text-8xl sm:text-7xl text-5xl">
             <TimelineContent
