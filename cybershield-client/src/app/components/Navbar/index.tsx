@@ -34,6 +34,7 @@ export default function Navbar() {
             <a href="/#about">About</a>
             <a href="/#testimonials">Testimonials</a>
             <a href="/careers">Careers</a>
+            <a href="/pricing">Pricing</a>
           </nav>
 
           <button className="text-lg h-10 px-4 rounded-lg text-white flex items-center gap-2 bg-neutral-800 relative before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-2 before:bg-gradient-to-t before:from-neutral-800 before:to-neutral-300 before:rounded-t-lg transition-all group">
@@ -82,6 +83,7 @@ export default function Navbar() {
                     <li className="hover:bg-neutral-800 cursor-pointer p-1.5 px-2 rounded-md"><a href="/#about">About</a></li>
                     <li className="hover:bg-neutral-800 cursor-pointer p-1.5 px-2 rounded-md"><a href="/#testimonials">Testimonials</a></li>
                     <li className="hover:bg-neutral-800 cursor-pointer p-1.5 px-2 rounded-md"><a href="/careers">Careers</a></li>
+                    <li className="hover:bg-neutral-800 cursor-pointer p-1.5 px-2 rounded-md"><a href="/pricing">Pricing</a></li>
                   </ul>
                 </div>
               </div>
